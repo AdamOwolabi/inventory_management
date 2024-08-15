@@ -12,8 +12,8 @@ export default function Home() {
   const [itemName, setItemName] = useState('');
   const [user, setUser] = useState(null);
 
-  
 
+  
   const handleGoogle = async (e) => {  
     const provider = await new GoogleAuthProvider();
     const auth = getAuth();
