@@ -90,6 +90,7 @@ export default function Home() {
       alignItems="center"
       flexDirection={"column"}
       gap={2}
+      bgcolor="white"
       > 
         <Modal open={open} onClose={handleClose}>
           <Box
