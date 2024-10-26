@@ -15,11 +15,11 @@ export default function Home() {
 
   
   const handleGoogle = async (e) => {  
-    const provider = await new GoogleAuthProvider();
+    const provider =  new GoogleAuthProvider();
     const auth = getAuth();
 
     try {
-        const result = signInWithPopup(auth, provider)
+        const result = await signInWithPopup(auth, provider)
         const user = result.user;
         console.log("User signed in: ", user);
         setUser(user);
